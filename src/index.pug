@@ -3,9 +3,20 @@ html(lang="en")
 head
   meta(charset="UTF-8")
   title Document
-  link(rel="stylesheet", href="./lib/bootstrap/dist/css/bootstrap.min.css")
+  link(rel="stylesheet", href="./lib/bootstrap/dist/css/cyborg.min.css")
+  link(rel="stylesheet", href="./lib/video.js/dist/video-js.min.css")
+  link(rel="stylesheet", href="./styles/style.css")
+  script
 body
-  div
-    video(width="640" height="480" controls)
-      source(src="" type="video/mp4")
+  div.row
+    video#video.video-js(width="640" height="360" controls preload="auto" data-setup={} muted)
+      source#source(src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4")
       | Browser does not support video tag.
+  div.container
+    div.form-group
+      label choose-thing
+      input.form-control#select-file(type="file")
+
+    script(src="./lib/jquery/dist/jquery.min.js")
+    script(src="./lib/video.js/dist/video.min.js")
+    script(src="./scripts/index.js")
