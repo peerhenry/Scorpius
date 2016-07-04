@@ -1,0 +1,17 @@
+{
+  "name": "scorpius",
+  "homepage": "https://github.com/peerhenry/Scorpius",
+  "authors": [
+    "PeerHenry <peerhenry@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
